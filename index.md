@@ -127,15 +127,15 @@ analytics:
 
 If you are using git, please remember `git submodule update` before build.
 
-The site content will be generated into the destination directory, for example: `_site`
+If not specified in `_config.yml`, The site content will be generated into the destination directory, for example: `_site`.
 
-You can publish the content.
+You can debug the site locally: `jekyll server -w`.
 
 ###Github Pages Issue
 
-**Multiple Languages is sported by [Jekyll Multiple Languages Plugin][Jekyll Multiple Languages Plugin]**, and Github page runs in a `safe mode` in which most of the plugins can not run.
+Multiple Languages is sported by **[Jekyll Multiple Languages Plugin][Jekyll Multiple Languages Plugin]**, and Github page runs in a `safe mode` in which most of the plugins can not run.
 
-Here is a solution: **[How to use Jekyll plugins on Github Pages](http://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/)**
+If your website is hosted in Github, here is a solution: **[How to use Jekyll plugins on Github Pages](http://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/)**
 
 [Jekyll]:   http://jekyllrb.com/    "Jekyll"
 [Jekyll Multiple Languages Plugin]: http://jekyll-langs.liaohuqiu.net/ "Jekyll Multiple Languages Plugin"
