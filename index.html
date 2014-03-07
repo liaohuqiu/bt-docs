@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Write beautiful bootstrap style document in an easy way.">
+
+
+<meta name="keywords" content="bootstrap documentation template, beautiful documentation, bootstrap template">
+
+<meta name="author" content="liaohuqiu@gmail.com">
+
+<title>
+  
+    Bt-docs
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="/assets/css/docs.min.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43024238-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" role="banner">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Bt-docs</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                <a href="/">English Version</a>
+                </li>
+                
+                <li>
+                <a href="/cn">中文版文档</a>
+                </li>
+                
+                <li>
+                <a href="https://github.com/liaohuqiu/bt-docs">Fork on Github</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Bt-docs</h1>
+        <p>Write beautiful and concise document in a easy way.</p>
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <h1>What is it?</h1>
+
+<hr>
+
+<h4>Using <a href="http://getbootstrap.com/getting-started/">Bootstrap document Template</a> to write document for your project.</h4>
+
+<ul>
+<li>Based on <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a></li>
+<li>Bootstrap document style</li>
+<li>Very easy to use</li>
+<li>Write in <code>markdown</code></li>
+<li>Bootstrap</li>
+<li>Multiple languages</li>
+</ul>
+
+<h1>Examples</h1>
+
+<hr>
+
+<h4><a href="http://cube-sdk.liaohuqiu.net/">http://cube-sdk.liaohuqiu.net/</a></h4>
+
+<h4><a href="http://jekyll-langs.liaohuqiu.net/">http://jekyll-langs.liaohuqiu.net/</a></h4>
+
+<h1>Jekyll</h1>
+
+<p>First we need use <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> to build the content.</p>
+
+<h4>A post about: <a href="http://www.liaohuqiu.net/posts/install-jekyll/">Install jekyll on CentOS</a></h4>
+
+<hr>
+
+<h1>How to use</h1>
+
+<hr>
+
+<p class='lead'>You can fork the github repository, or download zip package.</p>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Github</h3>
+        <p>Fork it in Github, use the souce code in your project.</p>
+
+<div class="highlight"><pre><code class="bash">git checkout -b docs
+git merge https://github.com/liaohuqiu/bt-docs
+git submodule upate
+git commit
+git push origin docs
+</code></pre></div>
+
+        <a href="https://github.com/liaohuqiu/bt-docs" class="btn btn-lg btn-outline" role="button" >View on Github</a>
+    </div>
+    <div class="col-sm-6">
+        <h3 id="download-zip">Copy file</h3>
+        <p>If you dont use git, you can download the zip package.</p>
+        <p>The copy the files into your document directory.</p>
+        <a href="https://github.com/liaohuqiu/bt-docs/archive/master.zip" class="btn btn-lg btn-outline" role="button" >Download zip</a>
+    </div>
+</div>
+
+<hr>
+
+<h3>Directory structure</h3>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">bt-docs/
+ ├── assets         <span class="c"># js / css / image</span>
+ ├── _config.yml    <span class="c"># configure for jekyll</span>
+ ├── dist           <span class="c"># js / css of bootstrap</span>
+ ├── _includes      <span class="c"># templete parts</span>
+ ├── _layouts
+ ├── _plugins
+ ├── README.md
+ └── _site          <span class="c"># the site content will be build to </span>
+</code></pre></div>
+<h3>Configure</h3>
+
+<ul>
+<li>  <code>_config.yml</code></li>
+</ul>
+<div class="highlight"><pre><code class="yaml language-yaml" data-lang="yaml"><span class="c1"># site information</span>
+<span class="l-Scalar-Plain">info</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">site_name</span><span class="p-Indicator">:</span>        <span class="l-Scalar-Plain">Bt-docs</span>
+
+<span class="l-Scalar-Plain">meta</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>      <span class="s">&quot;The</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">site&quot;</span>
+  <span class="l-Scalar-Plain">keywords</span><span class="p-Indicator">:</span>         <span class="s">&quot;Default</span><span class="nv"> </span><span class="s">keywords</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">site&quot;</span>
+  <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>           <span class="s">&quot;Author</span><span class="nv"> </span><span class="s">information&quot;</span>
+
+<span class="c1"># multiple language</span>
+<span class="l-Scalar-Plain">language_default</span><span class="p-Indicator">:</span>   <span class="s">&#39;en&#39;</span>
+
+<span class="l-Scalar-Plain">languages</span><span class="p-Indicator">:</span>          <span class="p-Indicator">[</span><span class="s">&quot;en&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;cn&quot;</span><span class="p-Indicator">]</span>
+
+<span class="c1"># left navigation</span>
+<span class="l-Scalar-Plain">left_nav</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">en</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">The title</span>
+    <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>           <span class="l-Scalar-Plain">/</span>
+    <span class="l-Scalar-Plain">items</span><span class="p-Indicator">:</span>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>       <span class="l-Scalar-Plain">/page1</span>
+        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>      <span class="s">&quot;Another</span><span class="nv"> </span><span class="s">page&quot;</span>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>       <span class="l-Scalar-Plain">/page2</span>
+        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>      <span class="s">&quot;Yet</span><span class="nv"> </span><span class="s">another</span><span class="nv"> </span><span class="s">page&quot;</span>
+  <span class="l-Scalar-Plain">cn</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="s">&quot;网站标题&quot;</span>
+    <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>           <span class="l-Scalar-Plain">/cn</span>
+    <span class="l-Scalar-Plain">items</span><span class="p-Indicator">:</span>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>       <span class="l-Scalar-Plain">/cn/page1</span>
+        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>      <span class="s">&quot;页面1&quot;</span>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>       <span class="l-Scalar-Plain">/cn/page2</span>
+        <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>      <span class="s">&quot;页面2&quot;</span>
+
+<span class="c1"># right navigation</span>
+<span class="l-Scalar-Plain">right_nav</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">English Version</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">/</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">中文版文档</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">/cn</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">Fork on Github</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">https://github.com/liaohuqiu/bt-docs</span>
+
+<span class="c1"># analytics account information, remember to change this.</span>
+<span class="l-Scalar-Plain">analytics</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">account</span><span class="p-Indicator">:</span>         <span class="l-Scalar-Plain">UA-43024238-3</span>
+</code></pre></div>
+<h3>Build &amp; Deploy</h3>
+
+<p>If you are using git, please remember <code>git submodule update</code> before build.</p>
+
+<p>The site content will be generated into the destination directory, for example: <code>_site</code></p>
+
+<p>You can publish the content.</p>
+
+<h3>Github Pages Issue</h3>
+
+<p><strong>Multiple Languages is sported by <a href="http://jekyll-langs.liaohuqiu.net/" title="Jekyll Multiple Languages Plugin">Jekyll Multiple Languages Plugin</a></strong>, and Github page runs in a <code>safe mode</code> in which most of the plugins can not run.</p>
+
+<p>Here is a solution: <strong><a href="http://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/">How to use Jekyll plugins on Github Pages</a></strong></p>
+
+        </div>
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+                <!-- auto gen -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <ul class="footer-links muted">
+      <li>Document framework powered by <a href="http://bt-docs.liaohuqiu.net">Bt-docs</a></li>
+      <li>&middot;</li>
+      <li>Proudly hosted by <a href="https://pages.github.com">Github Pages</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<script src="/assets/js/docs.min.js"></script>
+
+  </body>
+</html>
