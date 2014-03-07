@@ -61,6 +61,53 @@ bt-docs/
 ##Configure
 ```yaml
 
+# site information
+info:
+  site_name:        Bt-docs
+
+meta:
+  description:      "The default description for this site"
+  keywords:         "Default keywords for this site"
+  author:           "Author information"
+
+# multiple language
+language_default:   'en'
+
+languages:          ["en", "cn"]
+
+# left navigation
+left_nav:
+  en:
+    title:          The title
+    path:           /
+    items:
+      - path:       /page1
+        title:      "Another page"
+      - path:       /page2
+        title:      "Yet another page"
+  cn:
+    title:          "网站标题"
+    path:           /cn
+    items:
+      - path:       /cn/page1
+        title:      "页面1"
+      - path:       /cn/page2
+        title:      "页面2"
+
+# right navigation
+right_nav:
+  - title:          English Version
+    url:            /
+  - title:          中文版文档
+    url:            /cn
+  - title:          Fork on Github
+    url:            https://github.com/liaohuqiu/bt-docs
+
+# analytics account information, remember to change this.
+analytics:
+  google:
+    account:         UA-43024238-3
+
 ```
 
 #Multiple Languages
