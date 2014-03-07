@@ -101,22 +101,20 @@
 
       <div class="row">
         <div class="col-md-9" role="main">
-          <h1>What is it?</h1>
+          <h1>主要功能</h1>
 
 <hr>
 
-<h4>Using <a href="http://getbootstrap.com/getting-started/">Bootstrap document Template</a> to write document for your project.</h4>
+<h4>仿<a href="http://getbootstrap.com/getting-started/">Bootstrap模板</a>的一个网站框架，用来快速写一个UI好看的文档。</h4>
 
 <ul>
-<li>Based on <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a></li>
-<li>Bootstrap document style</li>
-<li>Very easy to use</li>
-<li>Write in <code>markdown</code></li>
-<li>Bootstrap</li>
-<li>Multiple languages</li>
+<li>使用<a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, 支持<code>markdown</code></li>
+<li>使用简单</li>
+<li>基于Bootstrap</li>
+<li>支持多语言</li>
 </ul>
 
-<h1>Examples</h1>
+<h1>示例网站</h1>
 
 <hr>
 
@@ -126,22 +124,22 @@
 
 <h1>Jekyll</h1>
 
-<p>First we need use <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> to build the content.</p>
+<p>网站内容使用<a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> 生成，所以你需要先安装好<a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>.</p>
 
-<h4>A post about: <a href="http://www.liaohuqiu.net/posts/install-jekyll/">Install jekyll on CentOS</a></h4>
-
-<hr>
-
-<h1>How to use</h1>
+<h4>一篇关于安装<a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>的文章: <a href="http://www.liaohuqiu.net/cn/posts/install-jekyll/">Install jekyll on CentOS</a></h4>
 
 <hr>
 
-<p class='lead'>You can fork the github repository, or download zip package.</p>
+<h1>如何使用</h1>
+
+<hr>
+
+<p class='lead'>你可以在Github上fork这个项目，或者直接下载源码包。</p>
 
 <div class="row">
     <div class="col-sm-6">
         <h3>Github</h3>
-        <p>Fork it in Github, use the souce code in your project.</p>
+        <p>Fork 这个项目，然后加入到你的项目中。</p>
 
 <div class="highlight"><pre><code class="bash">git checkout -b docs
 git merge https://github.com/liaohuqiu/bt-docs
@@ -150,49 +148,48 @@ git commit
 git push origin docs
 </code></pre></div>
 
-        <a href="https://github.com/liaohuqiu/bt-docs" class="btn btn-lg btn-outline" role="button" >View on Github</a>
+        <a href="https://github.com/liaohuqiu/bt-docs" class="btn btn-lg btn-outline" role="button" >Github</a>
     </div>
     <div class="col-sm-6">
-        <h3 id="download-zip">Copy file</h3>
-        <p>If you dont use git, you can download the zip package.</p>
-        <p>The copy the files into your document directory.</p>
-        <a href="https://github.com/liaohuqiu/bt-docs/archive/master.zip" class="btn btn-lg btn-outline" role="button" >Download zip</a>
+        <h3 id="download-zip">直接复制文件</h3>
+        <p>不使用Git的话，直接下载源码包，解压后放到项目中。</p>
+        <a href="https://github.com/liaohuqiu/bt-docs/archive/master.zip" class="btn btn-lg btn-outline" role="button" >下载源码包</a>
     </div>
 </div>
 
 <hr>
 
-<h3>Directory structure</h3>
+<h3>目录结构</h3>
 <div class="highlight"><pre><code class="bash language-bash" data-lang="bash">bt-docs/
  ├── assets         <span class="c"># js / css / image</span>
- ├── _config.yml    <span class="c"># configure for jekyll</span>
+ ├── _config.yml    <span class="c"># Jekyll 的配置文件</span>
  ├── dist           <span class="c"># js / css of bootstrap</span>
  ├── _includes      <span class="c"># templete parts</span>
  ├── _layouts
  ├── _plugins
  ├── README.md
- └── _site          <span class="c"># the site content will be build to </span>
+ └── _site          <span class="c"># 若非指定，生成的内容默认在这个目录</span>
 </code></pre></div>
-<h3>Configure</h3>
+<h3>配置</h3>
 
 <ul>
 <li>  <code>_config.yml</code></li>
 </ul>
-<div class="highlight"><pre><code class="yaml language-yaml" data-lang="yaml"><span class="c1"># site information</span>
+<div class="highlight"><pre><code class="yaml language-yaml" data-lang="yaml"><span class="c1"># 网站信息</span>
 <span class="l-Scalar-Plain">info</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">site_name</span><span class="p-Indicator">:</span>        <span class="l-Scalar-Plain">Bt-docs</span>
 
 <span class="l-Scalar-Plain">meta</span><span class="p-Indicator">:</span>
-  <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>      <span class="s">&quot;The</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">site&quot;</span>
-  <span class="l-Scalar-Plain">keywords</span><span class="p-Indicator">:</span>         <span class="s">&quot;Default</span><span class="nv"> </span><span class="s">keywords</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">site&quot;</span>
-  <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>           <span class="s">&quot;Author</span><span class="nv"> </span><span class="s">information&quot;</span>
+  <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>      <span class="s">&quot;默认的description&quot;</span>
+  <span class="l-Scalar-Plain">keywords</span><span class="p-Indicator">:</span>         <span class="s">&quot;默认keywords&quot;</span>
+  <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>           <span class="s">&quot;作者信息&quot;</span>
 
-<span class="c1"># multiple language</span>
+<span class="c1"># 多语言支持</span>
 <span class="l-Scalar-Plain">language_default</span><span class="p-Indicator">:</span>   <span class="s">&#39;en&#39;</span>
 
 <span class="l-Scalar-Plain">languages</span><span class="p-Indicator">:</span>          <span class="p-Indicator">[</span><span class="s">&quot;en&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;cn&quot;</span><span class="p-Indicator">]</span>
 
-<span class="c1"># left navigation</span>
+<span class="c1"># 左侧导航</span>
 <span class="l-Scalar-Plain">left_nav</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">en</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">The title</span>
@@ -211,7 +208,7 @@ git push origin docs
       <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>       <span class="l-Scalar-Plain">/cn/page2</span>
         <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>      <span class="s">&quot;页面2&quot;</span>
 
-<span class="c1"># right navigation</span>
+<span class="c1"># 右侧导航</span>
 <span class="l-Scalar-Plain">right_nav</span><span class="p-Indicator">:</span>
   <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">English Version</span>
     <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">/</span>
@@ -220,24 +217,29 @@ git push origin docs
   <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">Fork on Github</span>
     <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">https://github.com/liaohuqiu/bt-docs</span>
 
-<span class="c1"># analytics account information, remember to change this.</span>
+<span class="c1"># Google analytics的统计信息，请修改账号，不用请删除</span>
+<span class="c1"># 其他统计器请自行修改 _includes/header.html</span>
 <span class="l-Scalar-Plain">analytics</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">account</span><span class="p-Indicator">:</span>         <span class="l-Scalar-Plain">UA-43024238-5</span>
 </code></pre></div>
-<h3>Build &amp; Deploy</h3>
+<h3>网站生成和部署</h3>
 
-<p>If you are using git, please remember <code>git submodule update</code> before build.</p>
+<hr>
 
-<p>The site content will be generated into the destination directory, for example: <code>_site</code></p>
+<p>如果你使用git的话，生成之前切记 <code>git submodule update</code>。</p>
 
-<p>You can publish the content.</p>
+<p>如果没有在<code>_config.yml</code>中配置，网站内容默认生成到: <code>_site</code>。</p>
 
-<h3>Github Pages Issue</h3>
+<p>你可以使用jekyll在本地调试: <code>jekyll server -w</code>。</p>
 
-<p><strong>Multiple Languages is sported by <a href="http://jekyll-langs.liaohuqiu.net/" title="Jekyll Multiple Languages Plugin">Jekyll Multiple Languages Plugin</a></strong>, and Github page runs in a <code>safe mode</code> in which most of the plugins can not run.</p>
+<h3>Github Pages需要注意的问题</h3>
 
-<p>Here is a solution: <strong><a href="http://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/">How to use Jekyll plugins on Github Pages</a></strong></p>
+<hr>
+
+<p>多语言支持是用Jekyll的一个多语言插件实现的: <strong><a href="http://jekyll-langs.liaohuqiu.net/" title="Jekyll Multiple Languages Plugin">Jekyll Multiple Languages Plugin</a></strong>，但是Github Pages 目前不允许插件运行。</p>
+
+<p>如果你网站要放到Github上，这里有一个解决方案：: <strong><a href="http://www.liaohuqiu.net/cn/posts/jekyll-plugins-on-github-pages/">托管在Github上的网站如何使用插件</a></strong></p>
 
         </div>
         <div class="col-md-3">
