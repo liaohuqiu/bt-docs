@@ -121,7 +121,7 @@ right_nav:
 # analytics account information, remember to change this.
 analytics:
   google:
-    account:         UA-43024238-3
+    account:         UA-43024238-5
 
 ```
 
