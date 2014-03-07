@@ -22,8 +22,8 @@ info:
   site_name:    Bt-docs
 
 meta:
-  description:  Write beautiful bootstrap style document in a easy way.
-  keywords:     bootstrap documentation template, beautiful documentation, easy documentation
+  description:  Write beautiful bootstrap style document in an easy way.
+  keywords:     bootstrap documentation template, beautiful documentation, bootstrap template
   author:       liaohuqiu@gmail.com
 
 #multiple language
@@ -33,19 +33,13 @@ languages:      ["en", "cn"]
 
 navigation:
   en:
-    title:    Bt-docs
-    items1:
-      - path:     /imageloader
-        title:    Image Loader
-      - path:     /request
-        title:    Network Request
+    title:          Bt-docs
+    path:           /
+    items:          []
   cn:
-    title:    Cube
-    items1:
-      - path:     /imageloader
-        title:    图片加载组件
-      - path:     /request
-        title:    网络请求
+    title:          Bt-docs
+    path:           /cn
+    items:          []
 
 right_nav:
   - title:    English Version

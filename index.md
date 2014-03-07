@@ -6,16 +6,30 @@ lead: "Write beautiful and concise document in a easy way."
 
 #What is it?
 ---
+#### Using [Bootstrap document Template](http://getbootstrap.com/getting-started/) to write document for your project.
 
+* Based on [Jekyll][]
 * Bootstrap document style
 * Very easy to use
 * Write in `markdown`
+* Bootstrap
 * Multiple languages
 
-#How to use
+#Examples
 ---
 
-<h2 id="download">Download</h2>
+####[http://cube-sdk.liaohuqiu.net/](http://cube-sdk.liaohuqiu.net/)
+####[http://jekyll-langs.liaohuqiu.net/](http://jekyll-langs.liaohuqiu.net/)
+
+
+#How to use
+
+###First you need [Jekyll][]
+
+####A post about: [Install jekyll on CentOS](http://www.liaohuqiu.net/posts/install-jekyll/)
+---
+
+<h3 id="download">Download</h3>
 <p class='lead'>You can fork the github repository, or download zip package.</p>
 
 <div class="row">
@@ -35,63 +49,27 @@ lead: "Write beautiful and concise document in a easy way."
 ```bash
 bt-docs/
  ├── assets         # js / css / image
- ├── CNAME          # host name to github pages
- ├── conf           # configure files for develop
  ├── _config.yml    # configure for jekyll
  ├── dist           # js / css of bootstrap
  ├── _includes      # templete parts
- ├── lang           # the content in multiple languages
  ├── _layouts
  ├── _plugins
  ├── README.md
- ├── _site
- └── tools   
+ └── _site          # the site content will be build to 
 ```
-
 
 ##Configure
 ```yaml
-# site information
-info:
-  site_name:    Bt-docs
-
-meta:
-  description:  Write beautiful bootstrap style document in a easy way.
-  keywords:     bootstrap documentation template, beautiful documentation, easy documentation
-  author:       liaohuqiu@gmail.com
-
-#multiple language
-languages:      ["en", "cn"]
-
-navigation:
-  en:
-    title:    Bt-docs
-    items1:
-      - path:     /imageloader
-        title:    Image Loader
-      - path:     /request
-        title:    Network Request
-  cn:
-    title:    Cube
-    items1:
-      - path:     /imageloader
-        title:    图片加载组件
-      - path:     /request
-        title:    网络请求
-
-right_nav:
-  - title:    English Version
-    url:      /
-  - title:    中文版文档
-    url:      /cn
-  - title:    Fork on Github
-    url:     https://github.com/liaohuqiu/bt-docs
-
-# analytics account info
-analytics:
-  google:
-    account:    UA-43024238-3
 
 ```
-##
 
+#Multiple Languages
+
+###Multiple Languages
+
+**Try to use Jekyll plugins on Github Pages is a little complicated.**
+
+###[How to use Jekyll plugins on Github Pages](http://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/)
+
+
+[Jekyll]:   http://jekyllrb.com/    "Jekyll"
